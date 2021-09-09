@@ -1,12 +1,9 @@
 import "./centered.css";
-import Cards from "./Cards";
 
-const CenteredCard = () => {
+const CenteredCard = ({ children }) => {
   return (
-    <div className="centered">
-      <Cards texto="Child One" />
-      <Cards texto="Child Two" />
-      <Cards texto="Child Three" />
+    <div>
+      <span>{children}</span>
     </div>
   );
 };
